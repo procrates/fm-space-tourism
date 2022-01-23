@@ -1,5 +1,6 @@
 <template>
-    <div class="h-screen bg-cover bg-home-mobile font-family-bellefair">
+    <div class="h-full min-h-screen bg-cover bg-home-mobile font-family-bellefair" :class="`bg-${$route.params.page}-mobile`">
+
         <MobileHeader></MobileHeader>
         <Nuxt />
     </div>

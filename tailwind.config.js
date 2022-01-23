@@ -12,23 +12,23 @@ module.exports = {
         'home-tablet': 'url(~assets/home/background-home-tablet.jpg)',
         'home-desktop': 'url(~assets/home/background-home-desktop.jpg)',
         // Destination
-        'destination-mobile':
-          'url(/destination/background-destination-mobile.jpg)',
-        'destination-tablet':
-          'url(/destination/background-destination-tablet.jpg)',
-        'destination-desktop':
-          'url(/destination/background-destination-desktop.jpg)',
+        'destinations-mobile':
+          'url(~assets/destination/background-destination-mobile.jpg)',
+        'destinations-tablet':
+          'url(~assets/destination/background-destination-tablet.jpg)',
+        'destinations-desktop':
+          'url(~assets/destination/background-destination-desktop.jpg)',
         // Crew
-        'crew-mobile': 'url(/crew/background-crew-mobile.jpg)',
-        'crew-tablet': 'url(/crew/background-crew-tablet.jpg)',
-        'crew-desktop': 'url(/crew/background-crew-desktop.jpg)',
+        'crew-mobile': 'url(~assets/crew/background-crew-mobile.jpg)',
+        'crew-tablet': 'url(~assets/crew/background-crew-tablet.jpg)',
+        'crew-desktop': 'url(~assets/crew/background-crew-desktop.jpg)',
         // Technology
         'technology-mobile':
-          'url(/technology/background-technology-mobile.jpg)',
+          'url(~assets/technology/background-technology-mobile.jpg)',
         'technology-tablet':
-          'url(/technology/background-technology-tablet.jpg)',
+          'url(~assets/technology/background-technology-tablet.jpg)',
         'technology-desktop':
-          'url(/technology/background-technology-desktop.jpg)',
+          'url(~assets/technology/background-technology-desktop.jpg)',
       },
       colors: {
         dark: "hsl(230, 35%, 7%)",

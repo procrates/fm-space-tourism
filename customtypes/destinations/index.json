@@ -12,6 +12,20 @@
         },
         "type": "UID"
       },
+      "order": {
+        "config": {
+          "label": "order",
+          "placeholder": ""
+        },
+        "type": "Number"
+      },
+      "pageLabel": {
+        "config": {
+          "label": "pageLabel",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",
