@@ -1,8 +1,15 @@
 const plugin = require('tailwindcss/plugin')
 
 module.exports = {
-  content: {
-    files: []
+  mode: 'jit',
+  purge: {
+    content: [
+      '**/*.vue'
+    ],
+    options: {
+      // Whitelisting some classes to avoid purge
+      safelist: ['bg-destinations-mobile']
+    }
   },
   theme: {
     extend: {
