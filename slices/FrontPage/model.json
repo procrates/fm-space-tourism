@@ -11,23 +11,49 @@
       "version": "sktwi1xtmkfgx8626",
       "description": "FrontPage",
       "primary": {
+        "SubHeading": {
+          "config": {
+            "label": "SubHeading",
+            "placeholder": ""
+          },
+          "type": "Text"
+        },
         "title": {
           "type": "StructuredText",
           "config": {
-            "single": "heading1",
             "label": "Title",
-            "placeholder": "This is where it all begins..."
+            "placeholder": "This is where it all begins...",
+            "allowTargetBlank": true,
+            "single": "heading1"
           }
         },
         "description": {
           "type": "StructuredText",
           "config": {
-            "single": "paragraph",
             "label": "Description",
-            "placeholder": "A nice description of your product"
+            "placeholder": "A nice description of your product",
+            "allowTargetBlank": true,
+            "multi": "paragraph"
           }
+        },
+        "Link": {
+          "config": {
+            "label": "Link",
+            "placeholder": "",
+            "select": "web",
+            "allowTargetBlank": false
+          },
+          "type": "Link"
+        },
+        "ButtonText": {
+          "config": {
+            "label": "ButtonText",
+            "placeholder": ""
+          },
+          "type": "Text"
         }
-      }
+      },
+      "items": {}
     }
   ]
 }

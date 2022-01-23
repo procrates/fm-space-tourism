@@ -1,6 +1,7 @@
 <template>
   <section>
-    <slice-zone type="homepage" queryType="single" />
+      {{$route.params.uid}}
+    <slice-zone type="destinations" :uid="$route.params.uid" />
   </section>
 </template>
 
