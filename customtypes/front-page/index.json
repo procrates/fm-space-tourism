@@ -1,0 +1,35 @@
+{
+  "id": "front-page",
+  "label": "FrontPage",
+  "repeatable": false,
+  "status": true,
+  "json": {
+    "Main": {
+      "uid": {
+        "config": {
+          "label": "uid",
+          "placeholder": ""
+        },
+        "type": "UID"
+      },
+      "pageTitle": {
+        "config": {
+          "label": "pageTitle",
+          "placeholder": ""
+        },
+        "type": "Text"
+      },
+      "slices": {
+        "type": "Slices",
+        "fieldset": "Slice Zone",
+        "config": {
+          "choices": {
+            "frontpage": {
+              "type": "SharedSlice"
+            }
+          }
+        }
+      }
+    }
+  }
+}
