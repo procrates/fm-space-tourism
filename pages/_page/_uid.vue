@@ -8,15 +8,19 @@
 
 import SliceZone from "vue-slicezone";
 export default {
-  name: "Homepage",
+  name: "Page",
   components: {
     SliceZone
   },
   async asyncData({ $prismic, params, error }) {
     const document = await $prismic.api.query(
-      $prismic.predicates.at('document.type','destinations')
+      $prismic.predicates.at('document.type','destinations'),
+      {
+        orderings: '[document.order desc]'
+      }
     )
     if (document) {
+      console.log('doc', document.results[0].data)
       return { menuItems: document.results }
 
     } else {

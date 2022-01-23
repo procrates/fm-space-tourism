@@ -1,16 +1,16 @@
 <template>
   <section  v-if="menuItems" class="flex flex-col items-center pb-10 text-white">
     <h2 class="uppercase"><span class="mr-3">0{{ slice.primary.order }}</span> <span>{{ slice.primary.pageLabel }}</span></h2>
-    <div class="block mt-7">
+    <div class="block mt-7 w-44 h-44">
 
-      <prismic-image :field="slice.primary.image" class="object-cover w-44"/>
+      <prismic-image :field="slice.primary.image" class="object-cover "/>
     </div>
     <nav class="flex mt-7 ">
-      <NuxtLink to="#" nuxt-link-active="underline" v-for="(item, i) in menuItems" :key="`slice-item-${i}`" class="mr-3 uppercase last-child:mr-none font-barlow-con text-light-blue">
+      <NuxtLink :to="`/destinations/${item.uid}`"  v-for="(item, i) in menuItems" :key="`slice-item-${i}`" class="mr-3 uppercase last-child:mr-none font-barlow-con text-light-blue">
         {{item.uid}}
       </NuxtLink>
     </nav>
-    <span class="mt-6 text-6xl font-bellefair">{{ slice.primary.title }}</span>
+    <span class="mt-6 text-6xl uppercase font-bellefair">{{ slice.primary.title }}</span>
     <div class="block mx-4 mt-2">
       <prismic-rich-text :field="slice.primary.description" class="text-base text-center text-light-blue font-barlow-reg"/>
     </div>
