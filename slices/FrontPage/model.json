@@ -1,5 +1,5 @@
 {
-  "id": "front_page",
+  "id": "frontpage",
   "type": "SharedSlice",
   "name": "FrontPage",
   "description": "FrontPage",
@@ -36,21 +36,22 @@
             "multi": "paragraph"
           }
         },
-        "Link": {
-          "config": {
-            "label": "Link",
-            "placeholder": "",
-            "select": "web",
-            "allowTargetBlank": false
-          },
-          "type": "Link"
-        },
         "ButtonText": {
           "config": {
             "label": "ButtonText",
             "placeholder": ""
           },
           "type": "Text"
+        },
+        "link": {
+          "config": {
+            "label": "link",
+            "customtypes": [
+              "destinations"
+            ],
+            "select": "document"
+          },
+          "type": "Link"
         }
       },
       "items": {}

@@ -19,3 +19,7 @@
 .page-leave-to {
   opacity: 0;
 }
+body{
+overflow-y: scroll;
+
+}

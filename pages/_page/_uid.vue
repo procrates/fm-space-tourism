@@ -14,10 +14,7 @@ export default {
   },
   async asyncData({ $prismic, params, error }) {
     const document = await $prismic.api.query(
-      $prismic.predicates.at('document.type','destinations'),
-      {
-        orderings: '[document.order desc]'
-      }
+      $prismic.predicates.at('document.type','destinations')
     )
     if (document) {
       console.log('doc', document.results[0].data)

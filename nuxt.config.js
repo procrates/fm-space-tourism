@@ -49,7 +49,21 @@ export default {
     ],
     ['nuxt-sm'],
   ],
-
+  prismic: {
+    endpoint: 'https://space-tourism.cdn.prismic.io/api/v2',
+    /* apiOptions: {
+      routes: [
+        {
+          type: 'frontpage',
+          path: '/:lang/blog/:category?/:uid',
+          resolvers: {
+            country: 'country',
+            category: 'country.category',
+          },
+        },
+      ],
+    }, */
+  },
   // PWA module configuration: https://go.nuxtjs.dev/pwa
   pwa: {
     manifest: {

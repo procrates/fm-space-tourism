@@ -1,13 +1,13 @@
 <template>
   <section>
-    <slice-zone type="homepage" queryType="single" />
+    <slice-zone type="front-page" queryType="single" />
   </section>
 </template>
 
 <script>
 import SliceZone from "vue-slicezone";
 export default {
-  name: "Homepage",
+  name: "Frontpage",
   components: {
     SliceZone
   }
