@@ -6,7 +6,7 @@
       <prismic-image :field="slice.primary.image" class="object-cover w-44"/>
     </div>
     <nav class="flex mt-7 ">
-      <NuxtLink to="#" nuxt-link-active="underline" v-for="(item, i) in menuItems" :key="`slice-item-${i}`" class="mr-3 text-white uppercase last-child:mr-none font-barlow-con text-light-blue">
+      <NuxtLink to="#" nuxt-link-active="underline" v-for="(item, i) in menuItems" :key="`slice-item-${i}`" class="mr-3 uppercase last-child:mr-none font-barlow-con text-light-blue">
         {{item.uid}}
       </NuxtLink>
     </nav>
