@@ -78,13 +78,13 @@ data(){
             },
             {
                 id: 1,
-                label: "destionation",
-                slug: "/destionation/moon"
+                label: "destinations",
+                slug: "/destinations/moon"
             },
             {
                 id: 2,
                 label: "crew",
-                slug: "/crew/manly"
+                slug: "/crew/douglas-hurley"
             },
             {
                 id: 3,
