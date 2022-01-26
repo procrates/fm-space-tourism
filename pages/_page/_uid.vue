@@ -1,6 +1,6 @@
 <template>
   <section>
-    <slice-zone type="destinations" :uid="$route.params.uid" :sliceProps="{menuItems}" />
+    <slice-zone :type="$route.params.page" :uid="$route.params.uid" :sliceProps="{menuItems}" />
   </section>
 </template>
 
@@ -14,10 +14,12 @@ export default {
   },
   async asyncData({ $prismic, params, error }) {
     const document = await $prismic.api.query(
-      $prismic.predicates.at('document.type','destinations')
+      $prismic.predicates.at('document.type',params.page),
+      {
+        orderings: '[document.order desc]'
+      }
     )
     if (document) {
-      console.log('doc', document.results[0].data)
       return { menuItems: document.results }
 
     } else {
