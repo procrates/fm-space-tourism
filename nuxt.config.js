@@ -89,6 +89,11 @@ export default {
   ignore: [...getStoriesPaths().map((path) => path.replace('../', '~/'))], */
   generate: {
     fallback: '404.html', // Netlify reads a 404.html, Nuxt will load as an SPA
-    exclude: ['/slice-simulator']
+    /* exclude: ['/slice-simulator'] */
+  },
+  router: {
+    scrollBehavior: function (to, from, savedPosition) {
+      return savedPosition
+    }
   },
 }

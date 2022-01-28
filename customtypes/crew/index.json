@@ -12,6 +12,17 @@
         },
         "type": "UID"
       },
+      "order": {
+        "config": {
+          "label": "order",
+          "placeholder": "",
+          "options": [
+            "1",
+            "2"
+          ]
+        },
+        "type": "Select"
+      },
       "slices": {
         "type": "Slices",
         "fieldset": "Slice Zone",

@@ -13,6 +13,9 @@ module.exports = {
   },
   theme: {
     extend: {
+      letterSpacing: {
+        widest: '.169em',
+       },
       backgroundImage: {
         // Home
         'home-mobile': 'url(~assets/home/background-home-mobile.jpg)',
@@ -52,9 +55,9 @@ module.exports = {
         '100': '1',
        },
       fontFamily: {
-        bellefair: ['bellefair', 'regular'],
-        'barlow-con': ['barlow', 'condensed'],
-        'barlow-reg': ['barlow', 'regular']
+        bellefair: ['Bellefair', 'serif'],
+        'barlow-con': ['Barlow Condensed', 'sans-serif'],
+        'barlow-reg': ['Barlow', 'sans-serif']
       },
       fontSize: {
         lg: ['80px'],
