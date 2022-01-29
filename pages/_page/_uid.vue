@@ -3,6 +3,7 @@
     :type="$route.params.page"
     :uid="$route.params.uid"
     :sliceProps="{ menuItems }"
+    class="md:flex md:h-full md:flex-1"
   />
 </template>
 
