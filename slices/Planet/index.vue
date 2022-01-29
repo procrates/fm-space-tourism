@@ -1,6 +1,6 @@
 <template>
-  <section   class="flex flex-col items-center pb-10 text-white">
-    <h2 class="uppercase"><span class="mr-3">0{{ slice.primary.order }}</span> <span>{{ slice.primary.pageLabel }}</span></h2>
+  <section class="flex flex-col items-center pb-10 text-white">
+    <h2 class="py-6 uppercase"><span class="mr-3">0{{ slice.primary.order }}</span> <span>{{ slice.primary.pageLabel }}</span></h2>
     <div class="block mt-7 w-44 h-44">
 
       <prismic-image :field="slice.primary.image" class="object-cover "/>

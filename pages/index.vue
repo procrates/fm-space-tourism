@@ -1,15 +1,17 @@
 <template>
-  <section>
-    <slice-zone type="front-page" queryType="single" />
-  </section>
+  <slice-zone
+    type="front-page"
+    queryType="single"
+    class="flex flex-col flex-1 h-full md:content-center"
+  />
 </template>
 
 <script>
-import SliceZone from "vue-slicezone";
+import SliceZone from 'vue-slicezone'
 export default {
-  name: "Frontpage",
+  name: 'Frontpage',
   components: {
-    SliceZone
-  }
-};
+    SliceZone,
+  },
+}
 </script>
