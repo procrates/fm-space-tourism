@@ -10,6 +10,7 @@
 import SliceZone from 'vue-slicezone'
 export default {
   name: 'Frontpage',
+
   components: {
     SliceZone,
   },
