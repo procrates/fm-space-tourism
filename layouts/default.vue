@@ -4,7 +4,7 @@
   >
     <div
       v-if="bgImgComputed"
-      class="fixed inset-0 w-full min-h-screen bg-cover"
+      class="fixed inset-0 w-full min-h-screen transition-opacity duration-200 bg-cover "
       :style="{ backgroundImage: `url(${bgImgComputed})` }"
       style="background-blend-mode: screen; z-index: -1; background-color: #000"
     ></div>
@@ -15,7 +15,6 @@
 <script>
 export default {
   async middleware({ store, $prismic }) {
-    console.log('menu middleWARE')
     await store.dispatch('fetchMenu', $prismic)
   },
   data() {
@@ -65,7 +64,7 @@ export default {
       } else if (!isFrontPage && pageType && pageUid) {
         const document = await this.$prismic.api.getByUID(pageType, pageUid)
         if (document) {
-          console.log('docuemnt', document)
+          console.log('docuemnt', document.data)
           this.bgImg = document.data
         } else {
           this.bgImg = null

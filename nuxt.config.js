@@ -5,11 +5,11 @@ export default {
 
   // Global page headers: https://go.nuxtjs.dev/config-head
   head: {
-    title: 'testing',
+    title: 'Space',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: '' },
+      { hid: 'description', name: 'description', content: 'A space tourism website built on Nuxt 2 and prismic with slicemachine' },
       { name: 'format-detection', content: 'telephone=no' },
     ],
     link: [{ rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }],
@@ -89,7 +89,7 @@ export default {
   ignore: [...getStoriesPaths().map((path) => path.replace('../', '~/'))], */
   generate: {
     fallback: '404.html', // Netlify reads a 404.html, Nuxt will load as an SPA
-    /* exclude: ['/slice-simulator'] */
+    exclude: ['/slice-simulator']
   },
   router: {
     scrollBehavior: function (to, from, savedPosition) {
