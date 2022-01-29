@@ -33,7 +33,7 @@ export default {
   },
   computed: {
     bgImgComputed() {
-      if (this.innerWidth <= 375 && this.innerWidth > 768) {
+      if (this.innerWidth <= 375 && this.innerWidth < 768) {
         return this.bgImg.background_image_mobile.url
       }
       if (this.innerWidth >= 768 && this.innerWidth < 1440) {

@@ -4,13 +4,9 @@
 @tailwind utilities;
 
 /* home route and active route will show in bold as it matches / and /about */
-.nuxt-link-active {
-    @apply underline;
-  }
-  /* exact link will show the primary color for only the exact matching link */
-.nuxt-link-exact-active {
-    @apply underline;
-}
+
+/* exact link will show the primary color for only the exact matching link */
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.2s;
